@@ -4,8 +4,9 @@
    var express       = require('express'),
        mongoose      = require('mongoose');
 
-   var config = require('./config'),
-       setupController = require('./controllers/setupController');
+   var config           = require('./config'),
+       setupController  = require('./controllers/setupController'),
+       apiController    = require('./controllers/apiController');
 
    var app = express();
 
@@ -14,6 +15,8 @@
 
    app.set('view engine','ejs');
    app.use('/assets', express.static(__dirname + '/public'));
+
+   apiController(app);
 
    /**
     * DB Setup */

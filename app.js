@@ -4,20 +4,22 @@
    var express       = require('express'),
        mongoose      = require('mongoose');
 
-   var config = require('./config');
+   var config = require('./config'),
+       setupController = require('./controllers/setupController');
 
    var app = express();
 
    /**
     * App Setup */
 
-   app.use('view engine','ejs');
+   app.set('view engine','ejs');
    app.use('/assets', express.static(__dirname + '/public'));
 
    /**
     * DB Setup */
 
    mongoose.connect(config.getDbConnectionString());
+   setupController(app);
 
    /**
     * Server Setup */

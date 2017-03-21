@@ -5,7 +5,7 @@ NodeJS TODO API Sample Project for studying purposes.
 For following this project you need to be familiar with the Terminal,
  and have Node and MongoDB installed.
 
-##### 1) Start the project:
+### 1) Start the project:
 
 First create a folder for your application, you can name it ToDoApp for example. 
 In the Terminal cd into the folder, you'll keep running from there during
@@ -17,7 +17,7 @@ $ npm init
 ```
 You can customize your parameters or press enter for skipping all the steps.
 
-##### 2) Setup basic dependencies:
+### 2) Setup basic dependencies:
 
 You need to use NPM to install some dependencies that are needed to the project. Run on terminal:
 
@@ -30,7 +30,7 @@ Now you can make use of the three installed dependencies:
 - Mongoose
 
 
-##### 3) Create project folder structure:
+### 3) Create project folder structure:
 
 Following the diagram, create the needed folders and files with the
  correct names and extensions. Note that the ToDoApp folder you already
@@ -56,7 +56,7 @@ ToDoApp
 │
 └───node_modules <--- (You should already have it after step 2)
 ```
-##### 4) Create app.js file:
+### 4) Create app.js file:
 
 Now that you have the necessary files open the app.js and type the following code.
 This will setup the basic server functionality.
@@ -76,7 +76,7 @@ app.listen(port, function () {
 
 ````
 
-##### 5) Setup MongoDB: 
+### 5) Setup MongoDB: 
 
 To setup MongoDB you need to follow a few steps:
 1. Start mongod to serve your database, by opening a new Terminal window and running:
@@ -193,7 +193,7 @@ This new dependencies are allowing the app to access mongoose commands,
 together with the configuration and seed file. The DB Setup is connecting to 
 the database placed in the config file path and later executing the seeding.
 
-##### 6) Setup API Routes:
+### 6) Setup API Routes:
 
 Open the apiController.js file, inside controllers folder and type the code:
 ```javascript
@@ -288,18 +288,18 @@ method create;
 5. DELETE Route `/api/todo` - uses mongoose method findByIdAndRemove and 
 delete the todo with the specific `id` sent as a parameter;
 
-##### 7) Run Node app.js:
+### 7) Run Node app.js:
 
 On the Terminal (the one that is not running mongod, you can open a new 
 window if it's necessary), run the following command to start your app:
 ```sh
 $ node app.js
 ```
-##### 8) Seed data to your database:
+### 8) Seed data to your database:
 
 On your browser go to the URL http://localhost:3000/api/setupTodos 
 
-##### 9) Play with your API Routes:
+### 9) Play with your API Routes:
 
 The GET Routes you can play straight from your browser:
 

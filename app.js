@@ -13,7 +13,6 @@
    /**
     * App Setup */
 
-   app.set('view engine','ejs');
    app.use('/assets', express.static(__dirname + '/public'));
 
    apiController(app);

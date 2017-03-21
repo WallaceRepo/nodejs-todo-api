@@ -1,0 +1,30 @@
+{
+  "name": "node-todo-api",
+  "version": "1.0.0",
+  "description": "Node JS ToDo App sample",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitorvmiguel/NodeToDoAPI.git"
+  },
+  "keywords": [
+    "nodejs",
+    "api",
+    "todo"
+  ],
+  "author": "Vítor Miguel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vitorvmiguel/NodeToDoAPI/issues"
+  },
+  "homepage": "https://github.com/vitorvmiguel/NodeToDoAPI#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "ejs": "^2.5.6",
+    "express": "^4.15.2",
+    "mongoose": "^4.9.1"
+  }
+}

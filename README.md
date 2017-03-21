@@ -288,6 +288,17 @@ method create;
 5. DELETE Route `/api/todo` - uses mongoose method findByIdAndRemove and 
 delete the todo with the specific `id` sent as a parameter;
 
+Additionally in the app.js you need to call the API Routes:
+```javascript
+/*** Dependencies */
+// Add this code together with the existing dependencies comment: 
+var apiController    = require('./controllers/apiController');
+
+/*** App Setup */
+// Add this code to the bottom of the existing code:
+apiController(app);
+```
+
 ### 7) Run Node app.js:
 
 On the Terminal (the one that is not running mongod, you can open a new 

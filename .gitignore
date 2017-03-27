@@ -1,0 +1,6 @@
+# System files
+.DS_Store
+.idea
+
+# Modules managed by NPM
+node_modules
